@@ -1,4 +1,4 @@
-
+/*Js con logica de programación*/
 const vocales = ["e", "i", "a", "o", "u"];
 
 const claves = ["enter", "imes", "ai", "ober", "ufat"];
