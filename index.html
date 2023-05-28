@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos-generales.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="imagenes/Logo.png" alt="Logo Alura"></h1>
+    </header>
+
+    <main>
+
+        <div class="principal-main">
+
+            <section class="principal-entrada">
+                <textarea id="texto-entrada" class="texto-entrada" placeholder="Ingrese un texto aquí"></textarea>
+                <div id="label" class="info">
+                    <img src="imagenes/exclamation-solid.svg">
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div id="botones" class="botones">
+                    <button class="boton-primario" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-secundario" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="principal-salida">
+
+                <div id="imagen">
+
+                    <div class="centrar-imagen">
+                        <img class="imagen-not-found" src="imagenes/Muñeco.png" alt="muñeco Alura">
+                    </div>
+
+                    <h2 class="etiqueta-uno">Ningún mensaje fue encontrado</h2>
+
+                    <h4 class="etiqueta-dos">Ingresa el texto que desees encriptar o desencriptar.</h4>
+
+                </div>
+
+                <div id="sin-imagen" class="sin-imagen">
+                    <textarea id="texto-salida" class="texto-salida" readonly></textarea>
+
+                    <div id="boton">
+                        <button class="boton-tercero" onclick="copiarMensaje()">Copiar</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Daniel Nuñez -2023</p>
+    </footer>
+
+</body>
+
+</html>
